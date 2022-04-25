@@ -1,0 +1,10 @@
+[
+  {
+    "name": "GNU arm-none-eabi 11.2-2022.02",
+    "compilers": {
+      "C": "arm-none-eabi-gcc",
+      "CXX": "arm-none-eabi-g++"
+    },
+    "toolchainFile": "/workspaces/stm32/.devcontainer/custom-scripts/gcc-arm-none-eabi.cmake"
+  }
+]
