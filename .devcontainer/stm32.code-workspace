@@ -4,10 +4,12 @@
 			"path": ".."
 		},
 		{
-			"path": "../projects/f303re_bare"
+			"name": "Template F303RE with Makefile",
+			"path": "../templates/f303re_bare"
 		},
 		{
-			"path": "../projects/f303re_cmake"
+			"name": "Template F303RE with CMake",
+			"path": "../templates/f303re_cmake"
 		}
 	],
 	"settings": {
