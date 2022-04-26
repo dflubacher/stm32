@@ -14,7 +14,7 @@ mkdir cmsis
 |------------------------------|---------|------------------|
 | /Drivers/CMSIS/Include/ | *.h     | /cmsis/core/ |
 | /Drivers/CMSIS/Device/ST/STM32F3xx/Include/ | stm32f3xx.h, stm32f303xe.h, system_stm32f3xx.h |  /cmsis/device/include/ |
-| /Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/gcc/ | startup_stm32f303xe.s  | /cmsis/device/startup/ |
+| /Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/gcc/ | startup_stm32f303xe.s  | /cmsis/device/ |
 | /Projects/STM32F303RE-Nucleo/Templates/Src | system_stm32f3xx.c | /cmsis/device/ |
 | /Projects/STM32F303RE-Nucleo/Templates/Inc | stm32f3xx_it.h, main.h | /app/inc/ |
 | /Projects/STM32F303RE-Nucleo/Templates/Src | stm32f3xx_it.c | /app/src/ |

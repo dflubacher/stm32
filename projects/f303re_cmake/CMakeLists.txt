@@ -47,6 +47,8 @@ set(SRC_FILES
       app/main.c
       app/stm32f3xx_it.c
 
+      bsp/bsp.c
+
       cmsis/device/system_stm32f3xx.c
 
       cmsis/device/startup_stm32f303xe.s

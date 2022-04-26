@@ -7,14 +7,14 @@
     {
       "name": "Cortex Debug",
       "cwd": "${workspaceFolder}",
-      "executable": "${fileDirname}/../build/f303re_cmake.elf",
+      "executable": "build/f303re_cmake.elf",
       "request": "launch",
       "type": "cortex-debug",
       "runToEntryPoint": "main",
       "servertype": "openocd",
       "device": "STM32F303RE",
       "configFiles": [
-        "/usr/share/openocd/scripts/interface/stlink-v2-1.cfg",
+        "/usr/share/openocd/scripts/interface/stlink.cfg",
         "/usr/share/openocd/scripts/target/stm32f3x.cfg",
       ],
       "preLaunchTask": "Flash - Build project and flash target",
