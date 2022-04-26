@@ -73,5 +73,3 @@ uint8_t BspPbGetState(void) {
 
   return state;
 }
-
-uint8_t BspPbGetState(void);

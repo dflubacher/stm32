@@ -61,7 +61,7 @@
         "-j8"
       ],
       "options": {
-        "cwd": "${workspaceFolder"
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": [
         "$gcc"
