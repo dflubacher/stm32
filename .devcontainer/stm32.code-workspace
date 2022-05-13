@@ -10,11 +10,28 @@
 		{
 			"name": "Template F303RE with CMake",
 			"path": "../templates/f303re_cmake"
+		},
+		{
+			"name": "Template F303RE with FreeRTOS",
+			"path": "../templates/f303re_freertos"
 		}
 	],
 	"settings": {
 		"C_Cpp.intelliSenseEngine": "Disabled",
+		"C_Cpp.default.includePath": [
+			"/opt/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/**"
+		],
+		"C_Cpp.default.browse.path": [
+			"/opt/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/**"
+		],
 		"clangd.path": "clangd",
+		"clangd.arguments": [
+			"-log=verbose",
+			"-pretty",
+			"--background-index",
+			"--query-driver=/opt/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc", //for cross compile usage
+			"--compile-commands-dir=${workspaceFolder}/build"
+		],
 		"C_Cpp.clang_format_path": "../.clang-format",
 		"editor.formatOnSave": true,
 		"[c]": {

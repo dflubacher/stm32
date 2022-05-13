@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "STM32",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/**"
+        ],
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "compilerPath": "/opt/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/bin/arm-none-eabi-gcc",
+      "compileCommands": "/workspaces/stm32/templates/f303re_freertos/build/compile_commands.json"
+    }
+  ],
+  "version": 4
+}

@@ -14,6 +14,27 @@
 #include <stdint.h>
 
 // ////////////////////////////////////////////////////////////////////////////
+// Clock Initialization
+// ----------------------------------------------------------------------------
+
+/**
+ * @brief Nucleo-64 board STM32F303RE: clock configuration.
+ * 		- HSE bypass mode (ST Link uC clock output, Master Clock Output
+ *      (MCO)) -->  8 MHz
+ *    - PLL multiplication of 6 (max. 9).
+ * 		- SYSCLK, AHB, and APB2 with prescaler of 1
+ *         --> 48 MHz
+ *    - APB1 with prescaler of 2
+ * 		- set PA8 as MCO with /16 prescaler
+ *         -->  3 MHz
+ *
+ * 		This function is adapted from:
+ * https://pomad.cnfm.fr/PoMAD_2021/node/14
+ *
+ */
+void SystemClockConfig(void);
+
+// ////////////////////////////////////////////////////////////////////////////
 // Console
 // ----------------------------------------------------------------------------
 

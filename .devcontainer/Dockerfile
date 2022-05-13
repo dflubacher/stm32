@@ -85,6 +85,8 @@ ENV PATH=/opt/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin:\
 /opt/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/bin:${PATH}
 
 ENV OPENOCD_SCRIPTS=${OPENOCD_SCRIPTS}
+ENV LD_LIBRARY_PATH=/opt/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include
+
 
 RUN zsh -c "sed -i 's/ZSH_THEME.*/ZSH_THEME="eastwood"/1' ${HOME}/.zshrc"
 

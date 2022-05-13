@@ -6,7 +6,7 @@
 # ##   Initialize the project   ###############################################
 cmake_minimum_required(VERSION 3.22)
 
-project(f303re_cmake LANGUAGES C CXX ASM)
+project(f303re_freertos LANGUAGES C CXX ASM)
 set(PROJECT_PATH                    ${CMAKE_CURRENT_SOURCE_DIR})
 message(">>> BUILD TYPE: "          ${CMAKE_BUILD_TYPE})
 
@@ -56,6 +56,16 @@ set(SRC_FILES
       cmsis/device/system_stm32f3xx.c
 
       cmsis/device/startup_stm32f303xe.s
+
+      FreeRTOS/portable/GCC/ARM_CM4F/port.c
+      FreeRTOS/portable/MemMang/heap_1.c
+      FreeRTOS/croutine.c
+      FreeRTOS/event_groups.c
+      FreeRTOS/list.c
+      FreeRTOS/queue.c
+      FreeRTOS/stream_buffer.c
+      FreeRTOS/tasks.c
+      FreeRTOS/timers.c
 )
 
 # ##   Create a variable holding the list of include directories   ############
@@ -64,6 +74,8 @@ set(INCLUDE_DIRS
       bsp/include
       cmsis/core
       cmsis/device/include
+      FreeRTOS/include
+      FreeRTOS/portable/GCC/ARM_CM4F
       # /opt/opt/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include
       # ${TOOLCHAIN_INC_PATH}
       # ${TOOLCHAIN_SYSROOT}
