@@ -59,7 +59,9 @@
       "dependsOn": [
         "Build - Build project"
       ],
-      "problemMatcher": []
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Clean - Clean up project",
@@ -74,7 +76,9 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Configure - Configure CMake for this project",
@@ -96,7 +100,9 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$gcc"
+      ]
     }
   ]
 }

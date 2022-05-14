@@ -16,33 +16,7 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": [
-        {
-          "owner": "cpp",
-          "fileLocation": [
-            "relative",
-            "${workspaceFolder}"
-          ],
-          "pattern": {
-            "regexp": "^\\.\\.(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-            "file": 1,
-            "line": 2,
-            "column": 3,
-            "severity": 4,
-            "message": 5
-          }
-        },
-        {
-          "owner": "cpp",
-          "fileLocation": "absolute",
-          "pattern": {
-            "regexp": "^[^\\.](.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-            "file": 1,
-            "line": 2,
-            "column": 3,
-            "severity": 4,
-            "message": 5
-          }
-        }
+        "$gcc"
       ],
       "group": {
         "kind": "build",
@@ -85,7 +59,9 @@
       "dependsOn": [
         "Build - Build project"
       ],
-      "problemMatcher": []
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Clean - Clean up project",
@@ -100,7 +76,9 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$gcc"
+      ]
     },
     {
       "label": "Configure - Configure CMake for this project",
@@ -122,7 +100,9 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$gcc"
+      ]
     }
   ]
 }

@@ -18,6 +18,7 @@ Debug/
 .launch
 /.metadata/
 *.cortex-debug.*
+compile_commands.json
 
 # ============================================================================
 # bazel ignores
