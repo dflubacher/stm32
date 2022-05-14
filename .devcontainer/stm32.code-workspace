@@ -14,6 +14,10 @@
 		{
 			"name": "Template F303RE with FreeRTOS",
 			"path": "../templates/f303re_freertos"
+		},
+		{
+			"name": "Example F303RE, FreeRTOS, Binary Semaphore",
+			"path": "../examples/f303re_freertos_bin_semphr"
 		}
 	],
 	"settings": {
