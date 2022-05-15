@@ -1,0 +1,24 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Cortex Debug",
+      "cwd": "${workspaceFolder}",
+      "executable": "build/f303re_freertos_mutexes.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "openocd",
+      "device": "STM32F303RE",
+      "configFiles": [
+        "/usr/share/openocd/scripts/interface/stlink.cfg",
+        "/usr/share/openocd/scripts/target/stm32f3x.cfg",
+      ],
+      "preLaunchTask": "Flash - Build project and flash target",
+      "svdFile": "/workspaces/stm32/svds/STM32F303.svd"
+    }
+  ]
+}
