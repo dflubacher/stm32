@@ -1,24 +1,12 @@
 # STM32F303RE with FreeRTOS
 ## Example: Mutexes
-Semaphores:
-- binary
-  * Synchronization (task-task, task-interrupt), not message passing
-  * Two states:
-    * exists (has been 'given')
-    * doesn't exist (has never been 'given', or has already been 'taken')
-- counting
-  * share resources
-  * complex synchronization operations
+Mutexes:
+  * binary semaphores with priority inheritance mechanism
 
-Goals of semaphore:
-  * Block or unblock a task
-  * Who is irrelevant
-
-## Task priority
-> Low priority numbers denote low priority tasks. - [FreeRTOS web site](https://www.freertos.org/RTOS-task-priority.html)
+If low prio task holds token and high prio task wants to access it, the low prio task is temporarily raised to the high prio level. That way it is served faster and consequently can relase the token. Otherwise the high prio task is effectively blocked by low and medium prio tasks. This is a solution for [Wikipedia: Priority Inversion](https://en.wikipedia.org/wiki/Priority_inversion)
 
 ## Comparison
-Mutex (`xSemaphoreCreateMutex`):
+Mutex (`xSemaphoreCreateMutex()`):
 - Mutex is for protecting a shared resource.
 - A mutex is owned by the task that took it.
 - When another task attempts to take it, it will fail.

@@ -18,6 +18,10 @@
 		{
 			"name": "Example F303RE, FreeRTOS, Binary Semaphore",
 			"path": "../examples/f303re_freertos_bin_semphr"
+		},
+		{
+			"name": "Example F303RE, FreeRTOS, Mutexes",
+			"path": "../examples/f303re_freertos_mutexes"
 		}
 	],
 	"settings": {
